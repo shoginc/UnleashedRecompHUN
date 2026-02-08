@@ -57,7 +57,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "OPTIONEN" },
             { ELanguage::French,   "OPTIONS" },
             { ELanguage::Spanish,  "OPCIONES" },
-            { ELanguage::Italian,  "OPZIONI" }
+            { ELanguage::Italian,  "OPZIONI" },
+			{ ELanguage::Hungarian,  "BEÁLLÍTÁSOK" }
         }
     },
     {
@@ -68,7 +69,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "SYSTEM" },
             { ELanguage::French,   "SYSTÈME" },
             { ELanguage::Spanish,  "SISTEMA" },
-            { ELanguage::Italian,  "SISTEMA" }
+            { ELanguage::Italian,  "SISTEMA" },
+			{ ELanguage::Hungarian,  "RENDSZER" }
         }
     },
     {
@@ -79,7 +81,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "EINGABE" },
             { ELanguage::French,   "COMMANDES" },
             { ELanguage::Spanish,  "CONTROLES" },
-            { ELanguage::Italian,  "COMANDI" }
+            { ELanguage::Italian,  "COMANDI" },
+			{ ELanguage::Hungarian,  "BEVITEL" }
         }
     },
     {
@@ -90,7 +93,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "AUDIO" },
             { ELanguage::French,   "SON" },
             { ELanguage::Spanish,  "AUDIO" },
-            { ELanguage::Italian,  "AUDIO" }
+            { ELanguage::Italian,  "AUDIO" },
+			{ ELanguage::Hungarian,  "AUDIÓ" }
         }
     },
     {
@@ -101,7 +105,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "VIDEO" },
             { ELanguage::French,   "AFFICHAGE" },
             { ELanguage::Spanish,  "VÍDEO" },
-            { ELanguage::Italian,  "VIDEO" }
+            { ELanguage::Italian,  "VIDEO" },
+			{ ELanguage::Hungarian,  "VIDEÓ" }
         }
     },
     {
@@ -113,7 +118,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "MAX" },
             { ELanguage::French,   "MAX" },
             { ELanguage::Spanish,  "MÁX" },
-            { ELanguage::Italian,  "MAX" }
+            { ELanguage::Italian,  "MAX" },
+			{ ELanguage::Hungarian,  "MAX" }
         }
     },
     {
@@ -124,7 +130,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Fenstergröße" },
             { ELanguage::French,   "Taille de la fenêtre" },
             { ELanguage::Spanish,  "Tamaño de ventana" },
-            { ELanguage::Italian,  "Dimensioni della finestra" }
+            { ELanguage::Italian,  "Dimensioni della finestra" },
+			{ ELanguage::Hungarian,  "Ablak mérete" }
         }
     },
     {
@@ -136,7 +143,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Passe die Fenstergröße des Spiels im Fenstermodus an." },
             { ELanguage::French,   "Définir la résolution de jeu en mode fenêtré." },
             { ELanguage::Spanish,  "Ajusta el tamaño de la ventana de juego en modo ventana." },
-            { ELanguage::Italian,  "Regola la dimensione della finestra del gioco in modalità finestra." }
+            { ELanguage::Italian,  "Regola la dimensione della finestra del gioco in modalità finestra." },
+			{ ELanguage::Hungarian,  "Beállítja az ablak méretét ablakos módban." }
         }
     },
     {
@@ -149,7 +157,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Diese Option ist an dieser Stelle nicht verfügbar." },
             { ELanguage::French,   "Cette option n'est pas disponible pour l'instant." },
             { ELanguage::Spanish,  "Esta opción no está disponible en este momento." },
-            { ELanguage::Italian,  "Questa opzione non può essere modificata in questo momento." }
+            { ELanguage::Italian,  "Questa opzione non può essere modificata in questo momento." },
+			{ ELanguage::Hungarian,  "Ez a beállítás most nem elérhetô." }
         }
     },
     {
@@ -162,7 +171,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Diese Option ist im Vollbildmodus nicht verfügbar." },
             { ELanguage::French,   "Cette option n'est pas disponible en mode plein écran." },
             { ELanguage::Spanish,  "Esta opción no está disponible en modo pantalla completa." },
-            { ELanguage::Italian,  "Questa opzione non è disponibile in modalità schermo pieno." }
+            { ELanguage::Italian,  "Questa opzione non è disponibile in modalità schermo pieno." },
+			{ ELanguage::Hungarian,  "Ez a beállítás nem elérhetô teljes képernyôs módban." }
         }
     },
     {
@@ -175,7 +185,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Diese Option ist im Fenstermodus nicht verfügbar." },
             { ELanguage::French,   "Cette option n'est pas disponible en mode fenêtré." },
             { ELanguage::Spanish,  "Esta opción no está disponible en modo ventana." },
-            { ELanguage::Italian,  "Questa opzione non è disponibile in modalità finestra." }
+            { ELanguage::Italian,  "Questa opzione non è disponibile in modalità finestra." },
+			{ ELanguage::Hungarian,  "Ez a beállítás nem elérhetô ablakos módban." }
         }
     },
     {
@@ -188,7 +199,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Diese Option ist mit der momentanen Hardwarekonfiguration nicht verfügbar." },
             { ELanguage::French,   "Cette option n'est pas disponible avec votre configuration matérielle actuelle." },
             { ELanguage::Spanish,  "Esta opción no está disponible con tu configuración actual de hardware." },
-            { ELanguage::Italian,  "Questa opzione non è disponibile con l'hardware in tuo possesso." }
+            { ELanguage::Italian,  "Questa opzione non è disponibile con l'hardware in tuo possesso." },
+			{ ELanguage::Hungarian,  "Ez a beállítás nem elérhetô a jelenlegi hardver-konfigurációval." }
         }
     },
     {
@@ -201,7 +213,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Diese Option ist ohne MSAA nicht verfügbar." },
             { ELanguage::French,   "Cette option n'est pas disponible sans MSAA." },
             { ELanguage::Spanish,  "Esta opción no está disponible sin MSAA." },
-            { ELanguage::Italian,  "Questa opzione non è disponibile senza MSAA." }
+            { ELanguage::Italian,  "Questa opzione non è disponibile senza MSAA." },
+			{ ELanguage::Hungarian,  "Ez a beállítás nem elérhetô MSAA nélkül." }
         }
     },
     {
@@ -214,7 +227,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Diese Option wird von diesem Betriebssystem nicht unterstützt." },
             { ELanguage::French,   "Cette option n'est pas prise en charge par votre système d'exploitation." },
             { ELanguage::Spanish,  "Esta opción no está soportada por tu sistema operativo." },
-            { ELanguage::Italian,  "Questa opzione non è disponibile con il tuo sistema operativo." }
+            { ELanguage::Italian,  "Questa opzione non è disponibile con il tuo sistema operativo." },
+			{ ELanguage::Hungarian,  "Ezt a beállítást nem támogatja az operációs rendszered." }
         }
     },
     {
@@ -227,7 +241,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Das Spiel wird jetzt neu starten." },
             { ELanguage::French,   "Le jeu va maintenant redémarrer." },
             { ELanguage::Spanish,  "El juego se va a reiniciar." },
-            { ELanguage::Italian,  "Il gioco verrà riavviato." }
+            { ELanguage::Italian,  "Il gioco verrà riavviato." },
+			{ ELanguage::Hungarian,  "A játék újraindul." }
         }
     },
     {
@@ -239,7 +254,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Erfolge" },
             { ELanguage::French,   "Succès" },
             { ELanguage::Spanish,  "Logros" },
-            { ELanguage::Italian,  "Obiettivi" }
+            { ELanguage::Italian,  "Obiettivi" },
+			{ ELanguage::Hungarian,  "Trófeák" }
         }
     },
     {
@@ -251,7 +267,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "ERFOLGE" },
             { ELanguage::French,   "SUCCÈS" },
             { ELanguage::Spanish,  "LOGROS" },
-            { ELanguage::Italian,  "OBIETTIVI" }
+            { ELanguage::Italian,  "OBIETTIVI" },
+			{ ELanguage::Hungarian,  "TRÓFEÁK" }
         }
     },
     {
@@ -262,7 +279,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Erfolg Freigeschaltet!" },
             { ELanguage::French,   "Succès déverrouillé !" },
             { ELanguage::Spanish,  "¡Logro desbloqueado!" },
-            { ELanguage::Italian,  "Obiettivo sbloccato!" }
+            { ELanguage::Italian,  "Obiettivo sbloccato!" },
+			{ ELanguage::Hungarian,  "Trófea feloldva!" }
         }
     },
     {
@@ -274,6 +292,7 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::French,   "INSTALLATEUR" },
             { ELanguage::Spanish,  "INSTALADOR" },
             { ELanguage::Italian,  "INSTALLATORE" },
+			{ ELanguage::Hungarian,  "TELEPÍTÉS" },
         },
     },
     {
@@ -285,6 +304,7 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::French,   "INSTALLATION" },
             { ELanguage::Spanish,  "INSTALANDO" },
             { ELanguage::Italian,  "INSTALLANDO" },
+			{ ELanguage::Hungarian,  "TELEPÍTÉS" },
         }
     },
     {
@@ -296,7 +316,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Bitte eine Sprache auswählen." },
             { ELanguage::French,   "Choisissez une langue." },
             { ELanguage::Spanish,  "Selecciona un idioma." },
-            { ELanguage::Italian,  "Seleziona una lingua." }
+            { ELanguage::Italian,  "Seleziona una lingua." },
+			{ ELanguage::Hungarian,  "Válassz nyelvet." }
         }
     },
     {
@@ -308,7 +329,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Willkommen zu\nUnleashed Recompiled!\nEs wird eine Xbox 360 Kopie von Sonic Unleashed benötigt um mit der Installation fortfahren zu können." },
             { ELanguage::French,   "Bienvenue sur\nUnleashed Recompiled !\n\nVous aurez besoin d'une copie de Sonic Unleashed pour Xbox\n360 pour procéder à l'installation." },
             { ELanguage::Spanish,  "¡Bienvenido a\nUnleashed Recompiled!\n\nNecesitas una copia de\nSonic Unleashed de Xbox 360\npara continuar con la instalación." },
-            { ELanguage::Italian,  "Benvenuto a\nUnleashed Recompiled!\n\nDovrai avere una copia di\nSonic Unleashed per la Xbox 360\nper proseguire con l'installazione." }
+            { ELanguage::Italian,  "Benvenuto a\nUnleashed Recompiled!\n\nDovrai avere una copia di\nSonic Unleashed per la Xbox 360\nper proseguire con l'installazione." },
+			{ ELanguage::Hungarian,  "Köszöntünk az\nUnleashed Recompiled-ben!\n\nA telepítés folytatásához\nszükséged lesz a Sonic Unleashed Xbox 360 változatára." }
         }
     },
     {
@@ -320,7 +342,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Füge die Quellen für das Spiel und dessen Update hinzu." },
             { ELanguage::French,   "Ajouter les fichiers du jeu ainsi que ses mises à jour." },
             { ELanguage::Spanish,  "Añade las fuentes para el juego y su actualización." },
-            { ELanguage::Italian,  "Aggiungi le fonti per il gioco e per il suo file d'aggiornamento." }
+            { ELanguage::Italian,  "Aggiungi le fonti per il gioco e per il suo file d'aggiornamento." },
+			{ ELanguage::Hungarian,  "Add meg a játékfájlok és a frissítés helyét." }
         }
     },
     {
@@ -332,7 +355,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Füge die Quellen für die Erweiterungen des Spiels hinzu." },
             { ELanguage::French,   "Ajouter les fichiers pour les DLCs." },
             { ELanguage::Spanish,  "Añade las fuentes para el DLC." },
-            { ELanguage::Italian,  "Aggiungi le fonti per i DLC." }
+            { ELanguage::Italian,  "Aggiungi le fonti per i DLC." },
+			{ ELanguage::Hungarian,  "Add meg a DLC fájlok helyét." }
         }
     },
     {
@@ -344,7 +368,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Der Inhalt wird in dem Ordner des Programms installiert.\n" },
             { ELanguage::French,   "Le contenu sera installé dans le même dossier que le programme.\n" },
             { ELanguage::Spanish,  "El contenido será instalado a la carpeta del programa.\n\n" },
-            { ELanguage::Italian,  "Il contenuto verrà installato nella cartella di questo programma.\n\n" }
+            { ELanguage::Italian,  "Il contenuto verrà installato nella cartella di questo programma.\n\n" },
+			{ ELanguage::Hungarian,  "A tartalom a program jelenlegi mappájába lesz telepítve.\n\n" }
         }
     },
     {
@@ -356,7 +381,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Bitte warten. Der Inhalt wird installiert..." },
             { ELanguage::French,   "Veuillez patienter pendant l'installation du contenu..." },
             { ELanguage::Spanish,  "Por favor, espera mientras el contenido se instala... " },
-            { ELanguage::Italian,  "Attendi mentre il contenuto viene installato... " }
+            { ELanguage::Italian,  "Attendi mentre il contenuto viene installato... " },
+			{ ELanguage::Hungarian,  "Kérlek várj, amíg a telepítés folyik..." }
         }
     },
     {
@@ -368,7 +394,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Installation abgeschlossen!\nDieses Projekt wird präsentiert von:" },
             { ELanguage::French,   "Installation terminée !\nCe projet vous est présenté\npar :" },
             { ELanguage::Spanish,  "¡Instalación completada!\nEste proyecto ha sido posible gracias a:" },
-            { ELanguage::Italian,  "Installazione completata!\nQuesto progetto è stato creato da:" }
+            { ELanguage::Italian,  "Installazione completata!\nQuesto progetto è stato creato da:" },
+			{ ELanguage::Hungarian,  "Telepítés kész! A magyar nyelvi\nfájlok telepítéséhez használd a\nHedgeModManagert, add hozzá\na magyar fordítás mod-ot." }
         }
     },
     {
@@ -380,7 +407,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Installation fehlgeschlagen.\n\nFehler: " },
             { ELanguage::French,   "L'installation a échoué.\n\nErreur : " },
             { ELanguage::Spanish,  "La instalación falló.\n\nError: " },
-            { ELanguage::Italian,  "Installazione fallita.\n\nErrore: " }
+            { ELanguage::Italian,  "Installazione fallita.\n\nErrore: " },
+			{ ELanguage::Hungarian,  "Telepítés sikertelen.\n\nHiba: " }
         }
     },
     {
@@ -391,7 +419,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "SPIEL" },
             { ELanguage::French,   "JEU" },
             { ELanguage::Spanish,  "JUEGO" },
-            { ELanguage::Italian,  "GIOCO" }
+            { ELanguage::Italian,  "GIOCO" },
+			{ ELanguage::Hungarian,  "JÁTÉK" }
         }
     },
     {
@@ -402,7 +431,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "UPDATE" },
             { ELanguage::French,   "MISE À JOUR" },
             { ELanguage::Spanish,  "ACTUALIZACIÓN" },
-            { ELanguage::Italian,  "AGGIORNAMENTO" }
+            { ELanguage::Italian,  "AGGIORNAMENTO" },
+			{ ELanguage::Hungarian,  "FRISSÍTÉS" }
         }
     },
     {
@@ -414,7 +444,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Benötigter Speicherplatz:\n%2.2f GiB" },
             { ELanguage::French,   "Espace nécessaire :\n%2.2f Gio" },
             { ELanguage::Spanish,  "Espacio necesario: %2.2f GiB" },
-            { ELanguage::Italian,  "Spazio necessario: %2.2f GiB" }
+            { ELanguage::Italian,  "Spazio necessario: %2.2f GiB" },
+			{ ELanguage::Hungarian,  "Szükséges tárhely: %2.2f GiB" }
         }
     },
     {
@@ -426,7 +457,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Verfügbarer Speicherplatz:\n%2.2f GiB" },
             { ELanguage::French,   "Espace disponible :\n%2.2f Gio" },
             { ELanguage::Spanish,  "Espacio disponible: %2.2f GiB" },
-            { ELanguage::Italian,  "Spazio disponibile: %2.2f GiB" }
+            { ELanguage::Italian,  "Spazio disponibile: %2.2f GiB" },
+			{ ELanguage::Hungarian,  "Elérhetô tárhely: %2.2f GiB" }
         }
     },
     {
@@ -437,7 +469,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "WEITER" },
             { ELanguage::French,   "SUIVANT" },
             { ELanguage::Spanish,  "SIGUIENTE" },
-            { ELanguage::Italian,  "CONTINUA" }
+            { ELanguage::Italian,  "CONTINUA" },
+			{ ELanguage::Hungarian,  "TOVÁBB" }
         }
     },
     {
@@ -448,7 +481,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "ÜBERSPRINGEN" },
             { ELanguage::French,   "IGNORER" },
             { ELanguage::Spanish,  "SALTAR" },
-            { ELanguage::Italian,  "SALTA" }
+            { ELanguage::Italian,  "SALTA" },
+			{ ELanguage::Hungarian,  "KIHAGYÁS" }
         }
     },
     {
@@ -459,7 +493,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "ERNEUT VERSUCHEN" },
             { ELanguage::French,   "RÉESSAYER" },
             { ELanguage::Spanish,  "REINTENTAR" },
-            { ELanguage::Italian,  "RIPROVA" }
+            { ELanguage::Italian,  "RIPROVA" },
+			{ ELanguage::Hungarian,  "ÚJRA" }
         }
     },
     {
@@ -470,7 +505,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "DATEIEN HINZUFÜGEN" },
             { ELanguage::French,   "AJOUTER DES FICHIERS" },
             { ELanguage::Spanish,  "AÑADIR ARCHIVOS" },
-            { ELanguage::Italian,  "AGGIUNGI FILE" }
+            { ELanguage::Italian,  "AGGIUNGI FILE" },
+			{ ELanguage::Hungarian,  "FÁJLOK HOZZÁADÁSA" }
         }
     },
     {
@@ -481,7 +517,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "ORDNER HINZUFÜGEN" },
             { ELanguage::French,   "AJOUTER UN DOSSIER" },
             { ELanguage::Spanish,  "AÑADIR CARPETA" },
-            { ELanguage::Italian,  "AGGIUNGI CARTELLA" }
+            { ELanguage::Italian,  "AGGIUNGI CARTELLA" },
+			{ ELanguage::Hungarian,  "MAPPA HOZZÁADÁSA" }
         }
     },
     {
@@ -494,7 +531,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Die folgenden Dateien sind ungültig:" },
             { ELanguage::French,   "Les fichiers suivants ne sont pas valides :" },
             { ELanguage::Spanish,  "Los siguientes archivos no son válidos:" },
-            { ELanguage::Italian,  "I seguenti file non sono validi:" }
+            { ELanguage::Italian,  "I seguenti file non sono validi:" },
+			{ ELanguage::Hungarian,  "A következô fájlok érvénytelenek:" }
         }
     },
     {
@@ -507,7 +545,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Einige Dateien, die bereitgestellt\nwurden sind ungültig.\n\nBitte stelle sicher, dass\ndie angegebenen Dateien korrekt\nsind und versuche es erneut." },
             { ELanguage::French,   "Certains fichiers fournis ne\nsont pas valides.\n\nVeuillez vous assurer que tous\nles fichiers spécifiés sont\ncorrects et réessayez." },
             { ELanguage::Spanish,  "Algunos de los archivos\nseleccionados no son válidos.\n\nPor favor, asegúrate de que\ntodos los archivos son correctos\ne inténtalo de nuevo.\n" },
-            { ELanguage::Italian,  "Alcuni dei file che sono stati\nselezionati non sono validi.\n\nAssicurati che tutti\ni file sono quelli corretti\ne riprova." }
+            { ELanguage::Italian,  "Alcuni dei file che sono stati\nselezionati non sono validi.\n\nAssicurati che tutti\ni file sono quelli corretti\ne riprova." },
+			{ ELanguage::Hungarian,  "Néhány fájl amelyet\nmegadtál érvénytelen.\n\nKérlek ellenôrizd,\nhogy a fájlok megfelelôek\nés próbáld újra." }
         }
     },
     {
@@ -520,7 +559,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Wähle einen digitalen Dump von dem Spiel.\n\nDie Dateien können über die Festplatte deiner\nXbox 360 erlangt werden.\nFolge hierfür den Anweisungen auf der GitHub Seite.\n\nUm einen Ordner mit unmodifizierten Spieldateien auszuwählen, benutze die \"Ordner Hinzufügen\" Option stattdessen." },
             { ELanguage::French,   "Sélectionnez une copie\ndématérialisée avec le contenu du\njeu de base.\n\nCes fichiers peuvent être obtenus\nà partir du disque dur de votre\nXbox 360 en suivant les\ninstructions de la page GitHub.\n\nPour choisir un dossier contenant\nles fichiers de jeu extraits et\nnon modifiés, utilisez plutôt\nl'option \"Ajouter un dossier\"." },
             { ELanguage::Spanish,  "Selecciona una copia digital\ncon contenido del juego.\n\nPuedes obtener los archivos\nde tu disco duro de Xbox 360\nsiguiendo las instrucciones de\nla página de GitHub.\n\nPara elegir una carpeta con\narchivos extraídos sin modificar,\nutiliza la opción \"Añadir Carpeta\"." },
-            { ELanguage::Italian,  "Seleziona una copia digitale\ncon i contenuti del gioco.\n\nQuesti file possono essere ottenuti\ndall'hard drive della tua Xbox 360\nseguendo le istruzioni\nsulla pagina GitHub.\n\nPer selezionare una cartella\ncon file estratti e non modificati\nusa l'opzione \"Aggiungi cartella\"." }
+            { ELanguage::Italian,  "Seleziona una copia digitale\ncon i contenuti del gioco.\n\nQuesti file possono essere ottenuti\ndall'hard drive della tua Xbox 360\nseguendo le istruzioni\nsulla pagina GitHub.\n\nPer selezionare una cartella\ncon file estratti e non modificati\nusa l'opzione \"Aggiungi cartella\"." },
+			{ ELanguage::Hungarian,  "Válaszd ki a játékfájlok\nhelyét a lemezrôl.\n\nA fájlok beszerezhetôk\naz Xbox 360 merevlemezedrôl,\nha követed a GitHub oldalon\ntalálható útmutatót.\n\nHa egy kicsomagolt és\nmódosítatlan játékmappát használsz,\na \"Mappa hozzáadása\" opciót válaszd." }
         }
     },
     {
@@ -533,7 +573,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Wähle einen Ordner, der unmodifizierte Dateien, die vom Spiel extrahiert wurden enthält.\n\nDie Dateien können über die Festplatte deiner\nXbox 360 erlangt werden.\nFolge hierfür den Anweisungen auf der GitHub Seite.\n\nUm einen digitalen Dump auszuwählen, benutze die \"Datei Hinzufügen\" Option stattdessen." },
             { ELanguage::French,   "Sélectionnez un dossier contenant\nles fichiers extraits du jeu de\nbase.\n\nCes fichiers peuvent être obtenus\nà partir du disque dur de votre\nXbox 360 en suivant les\ninstructions de la page GitHub.\n\nPour choisir une copie\ndématérialisée, utilisez plutôt\nl'option \"Ajouter des fichiers\"." },
             { ELanguage::Spanish,  "Selecciona una carpeta que\ncontenga los archivos sin\nmodificar extraídos del juego.\n\nPuedes obtener los archivos\nde tu disco duro de Xbox 360\nsiguiendo las instrucciones de\nla página de GitHub.\n\nPara elegir una copia digital,\nutiliza la opción \"Añadir Archivos\"." },
-            { ELanguage::Italian,  "Seleziona una cartella che contiene\ni file non modificati che sono stati\nestratti dal gioco.\n\nQuesti file possono essere ottenuti\ndall'hard drive della tua Xbox 360\nseguendo le istruzioni\nsulla pagina GitHub.\n\nPer selezionare una copia digitale\nusa l'opzione \"Aggiungi file\"." }
+            { ELanguage::Italian,  "Seleziona una cartella che contiene\ni file non modificati che sono stati\nestratti dal gioco.\n\nQuesti file possono essere ottenuti\ndall'hard drive della tua Xbox 360\nseguendo le istruzioni\nsulla pagina GitHub.\n\nPer selezionare una copia digitale\nusa l'opzione \"Aggiungi file\"." },
+			{ ELanguage::Hungarian,  "Válaszd ki a mappát\namely a kicsomagolt játék\nmódosítatlan fájljait tartalmazza.\n\nA fájlok beszerezhetôk\naz Xbox 360 merevlemezedrôl,\nha követed a GitHub oldalon\ntalálható útmutatót.\n\nA lementett fájlok esetén,\nhasználd a \"Fájlok hozzáadása\" opciót." }
         }
     },
     {
@@ -546,7 +587,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Die ausgewählten Spiel- und\nUpdatedateien sind inkompatibel.\n\nBitte stelle sicher, dass\ndie Dateien für die selbe\nVersion und Region vorgesehen sind\nund versuche es erneut." },
             { ELanguage::French,   "Les fichiers du jeu et la mise à\njour sont incompatibles.\n\nVeuillez vous assurer que les\nfichiers sont pour la même\nversion/région puis réessayez." },
             { ELanguage::Spanish,  "El juego seleccionado\ny su actualización son incompatibles.\n\nPor favor, asegúrate de que que los archivos\nson de la misma versión y\nregión e inténtalo de nuevo." },
-            { ELanguage::Italian,  "I file del gioco\ne dell'aggiornamento sono incompatibili.\n\nAssicurati che i file sono\ndella stessa versione\ne regione e riprova." }
+            { ELanguage::Italian,  "I file del gioco\ne dell'aggiornamento sono incompatibili.\n\nAssicurati che i file sono\ndella stessa versione\ne regione e riprova." },
+			{ ELanguage::Hungarian,  "A megadott játékfájlok\nés a frissítés nem kompatibilis.\n\nEllenôrzid, hogy a fájlok\nugyanabból a verzióból és\nrégióból származnak." }
         }
     },
     {
@@ -559,7 +601,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Es wird empgohlen alle Erweiterungen zu installieren, da sie Beleuchtungs-Texturen in einer höheren Qualität für das Basisspiel beinhalten.\n\nBist du dir sicher, dass du diesen Schritt überspringen möchtest?" },
             { ELanguage::French,   "Il est fortement recommandé\nd'installer l'ensemble du\nDLC car elle inclut des\ntextures de lumière de\nhaute qualité pour le jeu\nde base.\n\nÊtes-vous sûr de vouloir\nignorer cette étape ?" },
             { ELanguage::Spanish,  "Se recomienda encarecidamente\ninstalar todo el DLC, ya que\ncontiene texturas de iluminación\nde alta calidad para el juego base.\n\n¿Seguro que quieres saltar este paso?" },
-            { ELanguage::Italian,  "Si consiglia di installare\ntutti i DLC, poichè includono\ntexture di illuminazione di qualità migliore.\n\nSei sicuro di voler saltare?" }
+            { ELanguage::Italian,  "Si consiglia di installare\ntutti i DLC, poichè includono\ntexture di illuminazione di qualità migliore.\n\nSei sicuro di voler saltare?" },
+			{ ELanguage::Hungarian,  "Ajánlott telepíteni\naz összes DLC-t, mivel\nezek a játék alapverziójához\nis tartalmaznak magasabb\nminôségû textúrákat.\n\nBiztosan ki akarod hagyni\nezt a lépést?" }
         }
     },
     {
@@ -572,7 +615,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Das Spiel wird neu gestartet\num die Installation einer fehlenden\nErweiterung zu ermöglichen.\n\nDie Installation einer\nErweiterung erhöht die Qualität\nder Beleuchtung im gesamten Spiel.\n\nMöchtest du den fehlenden\nInhalt installieren?" },
             { ELanguage::French,   "Cela redémarrera le jeu pour vous\npermettre d'installer les DLC\nmanquants.\n\nL'installation du DLC améliorera\nla qualité de l'éclairage dans le\njeu.\n\nSouhaitez-vous installer le\ncontenu manquant ?" },
             { ELanguage::Spanish,  "Esta opción reiniciará el juego\npara permitirte instalar los DLC\nque falten.\n\nInstalar el DLC mejorará la calidad\nde iluminación en todo el juego.\n\n¿Quieres instalar el contenido\nque falta?" },
-            { ELanguage::Italian,  "Questa opzione riavviera il gioco\nper farti installare qualsiasi DLC\nche non hai installato.\n\nL'installazione dei DLC migliorerà la qualità\ndell'illuminazione del gioco.\n\nVuoi installare i DLC mancanti?" }
+            { ELanguage::Italian,  "Questa opzione riavviera il gioco\nper farti installare qualsiasi DLC\nche non hai installato.\n\nL'installazione dei DLC migliorerà la qualità\ndell'illuminazione del gioco.\n\nVuoi installare i DLC mancanti?" },
+			{ ELanguage::Hungarian,  "Ez újraindítja a játékot, és\nlehetôvé teszi bármelyik DLC\ntelepítését, amely még hiányzik.\n\nA DLC-k telepítése javítja a\n megvilágítás minôségét a játékban.\n\nSzeretnéd telepíteni a\nhiányzó tartalmat?" }
         }
     },
     {
@@ -585,7 +629,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Das Spiel wird neu gestartet\num die Installation einer fehlenden\nErweiterung zu ermöglichen.\n\nEs kann keine weitere Erweiterung\ninstalliert werden.\n\nMöchtest du trotzdem fortfahren?" },
             { ELanguage::French,   "Cela redémarrera le jeu pour vous\npermettre d'installer les DLC\nmanquants.\n\nIl ne vous manque aucun DLC.\n\nVoulez-vous quand même continuer ?" },
             { ELanguage::Spanish,  "Esto reiniciará el juego\npara permitirte instalar\nlos DLC que falten.\n\nActualmente, no falta ningún\nDLC por instalarse.\n\n¿Quieres continuar de todos\nmodos?" },
-            { ELanguage::Italian,  "Questa opzione riavviera il gioco\nper farti installare qualsiasi DLC\nche non hai installato.\n\nHai già installato tutti i DLC.\n\nVuoi procedere comunque?" }
+            { ELanguage::Italian,  "Questa opzione riavviera il gioco\nper farti installare qualsiasi DLC\nche non hai installato.\n\nHai già installato tutti i DLC.\n\nVuoi procedere comunque?" },
+			{ ELanguage::Hungarian,  "Ez újraindítja a játékot, és\nlehetôvé teszi bármelyik DLC\ntelepítését, amely még hiányzik.\n\nJelenleg nem hiányzik\negyetlen DLC sem.\n\nSzeretnéd folytatni?" }
         }
     },
     {
@@ -598,7 +643,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Installation verlassen?" },
             { ELanguage::French,   "Êtes-vous sûr de vouloir quitter ?" },
             { ELanguage::Spanish,  "¿Estás seguro de que quieres\nsalir?" },
-            { ELanguage::Italian,  "Sicuro di voler uscire?" }
+            { ELanguage::Italian,  "Sicuro di voler uscire?" },
+			{ ELanguage::Hungarian,  "Biztosan kilépsz?" }
         }
     },
     {
@@ -611,7 +657,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Bist du dir sicher, dass du die Installation abbrechen möchtest?" },
             { ELanguage::French,   "Êtes-vous sûr de vouloir annuler l'installation ?" },
             { ELanguage::Spanish,  "¿Estás seguro de que quieres cancelar la instalación?" },
-            { ELanguage::Italian,  "Sicuro di voler annullare l'installazione?" }
+            { ELanguage::Italian,  "Sicuro di voler annullare l'installazione?" },
+			{ ELanguage::Hungarian,  "Biztosan megszakítod a telepítést?" }
         }
     },
     {
@@ -624,7 +671,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Spiel verlassen?" },
             { ELanguage::French,   "Êtes-vous sûr de vouloir quitter ?" },
             { ELanguage::Spanish,  "¿Estás seguro de que quieres\nsalir?" },
-            { ELanguage::Italian,  "Sicuro di voler uscire ?" }
+            { ELanguage::Italian,  "Sicuro di voler uscire ?" },
+			{ ELanguage::Hungarian,  "Biztosan kilépsz?" }
         }
     },
     {
@@ -638,7 +686,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Diese Speicherdatei ist beschädigt\nund kann nicht geladen werden." },
             { ELanguage::French,   "Le fichier de sauvegarde semble être\nendommagé et ne peut être chargé." },
             { ELanguage::Spanish,  "El archivo parece estar dañado\ny no se puede cargar." },
-            { ELanguage::Italian,  "I file di salvataggio sembrano danneggiati\ne non possono essere caricati." }
+            { ELanguage::Italian,  "I file di salvataggio sembrano danneggiati\ne non possono essere caricati." },
+			{ ELanguage::Hungarian,  "A mentés sérültnek tûnik,\nnem tölthetô be." }
         }
     },
     {
@@ -652,7 +701,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Die Erfolgsdaten sind möglicherweise\nfehlerhaft und können nicht\ngeladen werden.\n\nDurch das Fortfahren werden\ndeine bisherigen Erfolgsdaten gelöscht." },
             { ELanguage::French,   "Les données des succès semblent être\nendommagées et ne peuvent être\nchargées.\n\nSi vous continuez, vos données\nseront écrasées." },
             { ELanguage::Spanish,  "Los datos de logros parecen estar\ncorruptos y no pueden cargarse.\n\nContinuar a partir de este punto\neliminará los datos de logros." },
-            { ELanguage::Italian,  "I file degli obiettivi sembrano danneggiati\ne non possono essere caricati.\n\nSe prosegui da questo punto\ni tuoi obiettivi verranno cancellati." }
+            { ELanguage::Italian,  "I file degli obiettivi sembrano danneggiati\ne non possono essere caricati.\n\nSe prosegui da questo punto\ni tuoi obiettivi verranno cancellati." },
+			{ ELanguage::Hungarian,  "A trófeák adatai sérültnek\ntûnnek és nem tölthetôk be.\n\nFolytatás esetén törlôdik\na trófeák minden adata." }
         }
     },
     {
@@ -666,7 +716,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Die Erfolgsdaten konnten nicht geladen werden.\nDeine Erfolge werden nicht gespeichert." },
             { ELanguage::French,   "Les données des succès ne\npeuvent être chargées.\nVos succès ne seront pas\nsauvegardés." },
             { ELanguage::Spanish,  "Los datos de logros no pueden cargarse.\nTus logros no serán guardados." },
-            { ELanguage::Italian,  "I file degli obiettivi non possono essere caricati.\nI tuoi obiettivi non verranno salvati." }
+            { ELanguage::Italian,  "I file degli obiettivi non possono essere caricati.\nI tuoi obiettivi non verranno salvati." },
+			{ ELanguage::Hungarian,  "A trófeák adata nem tölthetôk be.\nA trófeák nem lesznek mentve." }
         }
     },
     {
@@ -678,7 +729,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Ein Update ist verfügbar!\n\nMöchtest du die Release-Seite\nbesuchen um es herunterzuladen?" },
             { ELanguage::French,   "Une mise à jour est disponible !\n\nVoulez-vous visiter la page\ndes mises à jour pour la\ntélécharger ?" },
             { ELanguage::Spanish,  "¡Hay una actualización disponible!\n\n¿Quieres ir a la página\npara descargarla?" },
-            { ELanguage::Italian,  "È disponibile un aggiornamento!\n\nVuoi visitare la pagina releases\nper scaricarlo?" }
+            { ELanguage::Italian,  "È disponibile un aggiornamento!\n\nVuoi visitare la pagina releases\nper scaricarlo?" },
+			{ ELanguage::Hungarian,  "Frissítés elérhetô!\n\nSzeretnéd meglátogatni\na letöltési weboldalt?" }
         }
     },
     {
@@ -689,7 +741,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Es ist nicht möglich, ein D3D12 (Windows) oder Vulkan-Backend zu erstellen.\n\nBitte stelle sicher, dass:\n\n- Dein System die Mindestanforderungen erfüllt.\n- Deine GPU-Treiber auf dem neuesten Stand sind.\n- Dein Betriebssystem auf der neuesten verfügbaren Version ist." },
             { ELanguage::French,   "Impossible de créer un backend D3D12 (Windows) ou Vulkan.\n\nVeuillez vous assurer que :\n\n- Votre système répond aux critères minimums requis.\n- Les pilotes de votre processeur graphique sont à jour.\n- Votre système d'exploitation est à jour." },
             { ELanguage::Spanish,  "No se puede crear un entorno de D3D12 (Windows) o de Vulkan.\n\nPor favor, asegúrate de que:\n\n- Tu equipo cumple con los requisitos mínimos.\n- Los drivers de tu tarjeta gráfica están actualizados.\n- Tu sistema operativo está actualizado a la última versión.\n" },
-            { ELanguage::Italian,  "Impossibile creare un backend D3D12 (Windows) o Vulkan.\n\nAssicurati che:\n\n- Il tuo sistema soddisfi i requisiti minimi.\n- I driver della scheda grafica siano aggiornati.\n- Il tuo sistema operativo sia aggiornato." }
+            { ELanguage::Italian,  "Impossibile creare un backend D3D12 (Windows) o Vulkan.\n\nAssicurati che:\n\n- Il tuo sistema soddisfi i requisiti minimi.\n- I driver della scheda grafica siano aggiornati.\n- Il tuo sistema operativo sia aggiornato." },
+			{ ELanguage::Hungarian,  "Unable to create a D3D12 (Windows) or Vulkan backend.\n\nPlease make sure that:\n\n- Your system meets the minimum requirements.\n- Your GPU drivers are up to date.\n- Your operating system is on the latest version available." }
         }
     },
     {
@@ -700,7 +753,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Das Modul \"%s\" konnte nicht gefunden werden.\n\nBitte stelle sicher, dass:\n\n- Diese Kopie von Unleashed Recompiled vollständig entpackt wurde und nicht nur die *.exe-Datei.\n- Unleashed Recompiled nicht direkt aus einer *.zip-Datei ausgeführt wird." },
             { ELanguage::French,   "Le module \"%s\" n'a pas pu être trouvé.\n\nVeuillez vous assurer que :\n\n- Vous avez extrait Unleashed Recompiled dans son entièreté et pas seulement le fichier *.exe.\n- Vous n'exécutez pas Unleashed Recompiled à partir d'un fichier *.zip." },
             { ELanguage::Spanish,  "No se pudo encontrar el módulo \"%s\".\n\nAsegúrese de que:\n\n- Ha extraido esta copia de Unleashed Recompiled por completo y no solo el archivo *.exe.\n- No está ejecutando Unleashed Recompiled desde un archivo *.zip." },
-            { ELanguage::Italian,  "Impossibile trovare il modulo \"%s\".\n\nAssicurati che:\n\n- Hai estratto questa copia di Unleashed Recompiled correttamente e non solo il file *.exe.\n- Non stai eseguendo Unleashed Recompiled da un file *.zip." }
+            { ELanguage::Italian,  "Impossibile trovare il modulo \"%s\".\n\nAssicurati che:\n\n- Hai estratto questa copia di Unleashed Recompiled correttamente e non solo il file *.exe.\n- Non stai eseguendo Unleashed Recompiled da un file *.zip." },
+			{ ELanguage::Hungarian,  "The module \"%s\" could not be found.\n\nPlease make sure that:\n\n- You extracted this copy of Unleashed Recompiled fully and not just the *.exe file.\n- You are not running Unleashed Recompiled from a *.zip file." }
         }
     },
     {
@@ -711,7 +765,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Fehler beim Zuweisen des Spielspeichers.\n\nBitte stelle sicher, dass:\n\n- Die Mindestanforderungen für das System erfüllt sind (8 GB).\n- Die Auslagerungsdatei mit mindestens 4-8 GB virtuellem Speicher konfiguriert ist." },
             { ELanguage::French,   "Échec d'allocation de la mémoire du jeu.\n\nVeuillez vous assurer que :\n\n- Vous disposez de la configuration minimale requise (8 Go).\n- Votre fichier d’échange est configuré avec au moins 4 à 8 Go de mémoire virtuelle." },
             { ELanguage::Spanish,  "Fallo al asignar memoria del juego.\n\nPor favor, asegúrate de que:\n\n- Cumples los requisitos mínimos del sistema (8 GB).\n- Tu archivo de páginación está configurado con al menos 4 u 8 GB de memoria virtual." },
-            { ELanguage::Italian,  "Impossibile allocare la memoria per il gioco.\n\nAssicurati che:\n\n- Soddisfi i requisiti minimi di sistema (8 GB).\n- Il tuo file di paging sia configurato con almeno 4 o 8 GB di memoria virtuale." }
+            { ELanguage::Italian,  "Impossibile allocare la memoria per il gioco.\n\nAssicurati che:\n\n- Soddisfi i requisiti minimi di sistema (8 GB).\n- Il tuo file di paging sia configurato con almeno 4 o 8 GB di memoria virtuale." },
+			{ ELanguage::Hungarian,  "Failed to allocate game memory.\n\nPlease make sure that:\n\n- You meet the minimum system requirements (8 GB).\n- Your page file is configured with at least 4-8 GB of virtual memory." }
         }
     },
     {
@@ -722,7 +777,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,  "Die Installation wurde überprüft.\n\nAlle Dateien scheinen korrekt zu sein.\n\nDas Spiel wird nun geschlossen. Entferne die Startoption, um das Spiel zu spielen." },
             { ELanguage::French,  "La vérification de l'installation est terminée.\n\nTous les fichiers semblent corrects.\n\nL'application va maintenant se fermer. Retirez l'argument de lancement pour pouvoir lancer le jeu." },
             { ELanguage::Spanish,  "La verificación de la instalación ha terminado.\n\nTodos los archivos parecen correctos.\n\nEl juego se cerrará ahora. Elimina el argumento de lanzamiento para jugar al juego." },
-            { ELanguage::Italian,  "La verifica dei file d'installazione è terminata.\n\nTutti i file sembrano corretti.\n\nIl gioco si chiuderà. Rimuovi l'argomento di avvio per poter giocare." }
+            { ELanguage::Italian,  "La verifica dei file d'installazione è terminata.\n\nTutti i file sembrano corretti.\n\nIl gioco si chiuderà. Rimuovi l'argomento di avvio per poter giocare." },
+			{ ELanguage::Hungarian,  "Installation check has finished.\n\nAll files seem to be correct.\n\nThe game will now close. Remove the launch argument to play the game." }
         }
     },
     {
@@ -733,7 +789,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,  "Die Installationsprüfung ist fehlgeschlagen.\n\nFehler: %s\n\nDas Spiel wird nun geschlossen. Versuche das Spiel durch Verwendung der Startoption --install neu zu installieren." },
             { ELanguage::French,  "La vérification de l'installation a échoué.\n\nErreur : %s\n\nL'application va maintenant se fermer. Essayez de réinstaller le jeu en utilisant l'argument de lancement --install." },
             { ELanguage::Spanish,  "La verificación de la instalación ha fallado.\n\nError: %s\n\nEl juego se cerrará ahora. Intenta reinstalar el juego utilizando el argumento de lanzamiento --install." },
-            { ELanguage::Italian,  "La verifica dei file d'installazione non è andata a buon fine.\n\nErrore: %s\n\nIl gioco si chiuderà. Prova a reinstallare il gioco utilizzando l'argomento di avvio --install." }
+            { ELanguage::Italian,  "La verifica dei file d'installazione non è andata a buon fine.\n\nErrore: %s\n\nIl gioco si chiuderà. Prova a reinstallare il gioco utilizzando l'argomento di avvio --install." },
+			{ ELanguage::Hungarian,  "Installation check has failed.\n\nError: %s\n\nThe game will now close. Try reinstalling the game by using the --install launch argument." }
         }
     },
     {
@@ -744,7 +801,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "EIN" },
             { ELanguage::French,   "OUI" },
             { ELanguage::Spanish,  "SÍ" },
-            { ELanguage::Italian,  "SÌ" }
+            { ELanguage::Italian,  "SÌ" },
+			{ ELanguage::Hungarian,  "BE" }
         }
     },
     {
@@ -755,7 +813,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "AUS" },
             { ELanguage::French,   "NON" },
             { ELanguage::Spanish,  "NO" },
-            { ELanguage::Italian,  "NO" }
+            { ELanguage::Italian,  "NO" },
+			{ ELanguage::Hungarian,  "KI" }
         }
     },
     {
@@ -766,7 +825,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Ja" },
             { ELanguage::French,   "Oui" },
             { ELanguage::Spanish, "Sí" },
-            { ELanguage::Italian,  "Sì" }
+            { ELanguage::Italian,  "Sì" },
+			{ ELanguage::Hungarian,  "Igen" }
         }
     },
     {
@@ -777,7 +837,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Nein" },
             { ELanguage::French,   "Non" },
             { ELanguage::Spanish,  "No" },
-            { ELanguage::Italian,  "No" }
+            { ELanguage::Italian,  "No" },
+			{ ELanguage::Hungarian,  "Nem" }
         }
     },
     {
@@ -788,7 +849,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Weiter" },
             { ELanguage::French,   "Suivant" },
             { ELanguage::Spanish, "Siguiente" },
-            { ELanguage::Italian,  "Avanti" }
+            { ELanguage::Italian,  "Avanti" },
+			{ ELanguage::Hungarian,  "Tovább" }
         }
     },
     {
@@ -799,7 +861,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Auswählen" },
             { ELanguage::French,   "Choisir" },
             { ELanguage::Spanish,  "Seleccionar" },
-            { ELanguage::Italian,  "Seleziona" }
+            { ELanguage::Italian,  "Seleziona" },
+			{ ELanguage::Hungarian,  "Kiválaszt" }
         }
     },
     {
@@ -810,7 +873,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Zurück" },
             { ELanguage::French,   "Retour" },
             { ELanguage::Spanish,  "Atrás" },
-            { ELanguage::Italian,  "Indietro" }
+            { ELanguage::Italian,  "Indietro" },
+			{ ELanguage::Hungarian,  "Vissza" }
         }
     },
     {
@@ -821,7 +885,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Verlassen" },
             { ELanguage::French,   "Quitter" },
             { ELanguage::Spanish,  "Salir" },
-            { ELanguage::Italian,  "Esci" }
+            { ELanguage::Italian,  "Esci" },
+			{ ELanguage::Hungarian,  "Kilépés" }
         }
     },
     {
@@ -832,7 +897,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Abbrechen" },
             { ELanguage::French,   "Annuler" },
             { ELanguage::Spanish,  "Cancelar" },
-            { ELanguage::Italian,  "Annulla" }
+            { ELanguage::Italian,  "Annulla" },
+			{ ELanguage::Hungarian,  "Mégsem" }
         }
     },
     {
@@ -843,7 +909,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Zurücksetzen" },
             { ELanguage::French,   "Par défaut" },
             { ELanguage::Spanish,  "Reiniciar" },
-            { ELanguage::Italian,  "Ripristina" }
+            { ELanguage::Italian,  "Ripristina" },
+			{ ELanguage::Hungarian,  "Reset" }
         }
     },
     {
@@ -854,7 +921,8 @@ std::unordered_map<std::string_view, std::unordered_map<ELanguage, std::string>>
             { ELanguage::German,   "Wechseln" },
             { ELanguage::French,   "Changer" },
             { ELanguage::Spanish,  "Cambiar" },
-            { ELanguage::Italian,  "Cambia" }
+            { ELanguage::Italian,  "Cambia" },
+			{ ELanguage::Hungarian,  "Váltás" }
         }
     }
 };

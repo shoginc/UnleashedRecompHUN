@@ -60,7 +60,8 @@ CONFIG_DEFINE_LOCALE(Language)
     { ELanguage::German,   { "Sprache", "Ändere die Sprache für Text und Logos." } },
     { ELanguage::French,   { "Langue", "Modifie la langue utilisée pour le texte et logos." } },
     { ELanguage::Spanish,  { "Idioma", "Cambia el idioma utilizado para el texto y los logos." } },
-    { ELanguage::Italian,  { "Lingua", "Cambia la lingua utilizzata per i testi e i logo." } }
+    { ELanguage::Italian,  { "Lingua", "Cambia la lingua utilizzata per i testi e i logo." } },
+	{ ELanguage::Hungarian,  { "Nyelv", "A szöveg és feliratok nyelvének megváltoztatása." } }
 };
 
 // Notes: do not localise this.
@@ -74,7 +75,8 @@ CONFIG_DEFINE_ENUM_LOCALE(ELanguage)
             { ELanguage::German,   { "DEUTSCH", "" } },
             { ELanguage::French,   { "FRANÇAIS", "" } },
             { ELanguage::Spanish,  { "ESPAÑOL", "" } },
-            { ELanguage::Italian,  { "ITALIANO", "" } }
+            { ELanguage::Italian,  { "ITALIANO", "" } },
+			{ ELanguage::Hungarian,  { "MAGYAR", "" } }
         }
     }
 };
@@ -123,6 +125,13 @@ CONFIG_DEFINE_ENUM_LOCALE(EVoiceLanguage)
             { EVoiceLanguage::Japanese, { "GIAPPONESE", "" } }
         }
     },
+	{
+		ELanguage::Hungarian,
+        {
+            { EVoiceLanguage::English,  { "ANGOL", "" } },
+            { EVoiceLanguage::Japanese, { "JAPÁN", "" } }
+        }
+	}
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -133,7 +142,8 @@ CONFIG_DEFINE_LOCALE(Hints)
     { ELanguage::German,   { "Hinweise", "Zeige Hinweise während des Spiels." } },
     { ELanguage::French,   { "Indices", "Affiche les indices pendant le jeu." } },
     { ELanguage::Spanish,  { "Pistas", "Muestra pistas durante el juego." } },
-    { ELanguage::Italian,  { "Indizi", "Mostra degli indizzi durante il gioco." } }
+    { ELanguage::Italian,  { "Indizi", "Mostra degli indizzi durante il gioco." } },
+	{ ELanguage::Hungarian,  { "Tippek", "Tippek mutatása játék közben." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -144,7 +154,8 @@ CONFIG_DEFINE_LOCALE(ControlTutorial)
     { ELanguage::German,   { "Steuerungsanleitung", "Zeige Steuerungshinweise während des Spiels.\n\nKritische Angriffe des Werehogs werden hiervon nicht beeinflusst." } },
     { ELanguage::French,   { "Indication des commandes", "Affiche les indications des commandes pendant le jeu.\n\nCeci n'affecte pas les Coup critique du Werehog." } },
     { ELanguage::Spanish,  { "Tutorial de controles", "Muestra pistas de controles durante el juego.\n\nEl indicador de ataque crítico del Werehog no se verá afectado." } },
-    { ELanguage::Italian,  { "Tutorial dei comandi", "Mostra i tutorial dei comandi durante il gioco.\n\nIl tutorial per l'attacco critico del Werehog non verrà influenzato da questa opzione." } }
+    { ELanguage::Italian,  { "Tutorial dei comandi", "Mostra i tutorial dei comandi durante il gioco.\n\nIl tutorial per l'attacco critico del Werehog non verrà influenzato da questa opzione." } },
+	{ ELanguage::Hungarian,  { "Irányítási súgó", "Súgók megjelenítése játék közben.\n\nA kritikál Werehog támadásokat nem érinti a beállítás." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -155,7 +166,8 @@ CONFIG_DEFINE_LOCALE(AchievementNotifications)
     { ELanguage::German,   { "Erfolgsbenachrichtigungen", "Zeige Benachrichtigungen für das Freischalten von Erfolgen.\n\nErfolge werden weiterhin freigeschaltet, auch wenn die Benachrichtigungen ausgeschaltet sind." } },
     { ELanguage::French,   { "Notification des succès", "Affiche les notifications pour le déverrouillage des succès.\n\nLes succès seront toujours obtenus même si les notifications sont désactivées." } },
     { ELanguage::Spanish,  { "Notificaciones de logros", "Muestra notificaciones al desbloquear logros.\n\nLos logros se seguirán obteniendo aunque las notificaciones estén desactivadas." } },
-    { ELanguage::Italian,  { "Notifiche obiettivi", "Mostra delle notifiche quando sblocchi degli obiettivi.\n\nGli obiettivi verranno comunque assegnati anche con le notifiche disattivate." } }
+    { ELanguage::Italian,  { "Notifiche obiettivi", "Mostra delle notifiche quando sblocchi degli obiettivi.\n\nGli obiettivi verranno comunque assegnati anche con le notifiche disattivate." } },
+	{ ELanguage::Hungarian,  { "Trófea értesítések", "Értesítések megjelenítése trófeák megszerzésekor.\n\nKikapcsolt opciónál is átadásra kerülnek a trófeák." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -166,7 +178,8 @@ CONFIG_DEFINE_LOCALE(TimeOfDayTransition)
     { ELanguage::German,   { "Tageszeit Übergang", "Verändere den Ladebildschirm beim Verändern der Tageszeit in Städten und Eingangslevel." } },
     { ELanguage::French,   { "Transition jour/nuit", "Change l'écran de chargement lors de la transition dans le hub." } },
     { ELanguage::Spanish,  { "Transición de hora del día", "Cambia cómo aparece la pantalla de carga al cambiar la hora del día en las áreas principales." } },
-    { ELanguage::Italian,  { "Transizione giorno/notte", "Modifica l'aspetto della schermata di caricamento quando fai scorrere il tempo." } }
+    { ELanguage::Italian,  { "Transizione giorno/notte", "Modifica l'aspetto della schermata di caricamento quando fai scorrere il tempo." } },
+	{ ELanguage::Hungarian,  { "Napszak váltás", "Válaszd ki, hogyan jelenjen meg a töltôképernyô a napszak megváltoztatása esetén." } }
 };
 
 // Japanese Notes: This localization should include furigana in its description.
@@ -213,6 +226,13 @@ CONFIG_DEFINE_ENUM_LOCALE(ETimeOfDayTransition)
             { ETimeOfDayTransition::Xbox,        { "XBOX", "Xbox: la scena di trasformazione verrà riprodotta con tempi di caricamento artificiali." } },
             { ETimeOfDayTransition::PlayStation, { "PLAYSTATION", "PlayStation: verrà utilizzata una schermata di caricamento con una medaglia che gira." } }
         }
+    },
+	{
+        ELanguage::Hungarian,
+        {
+            { ETimeOfDayTransition::Xbox,        { "XBOX", "Xbox: átváltozási jelenet lejátszása mesterséges betöltési idôvel." } },
+            { ETimeOfDayTransition::PlayStation, { "PLAYSTATION", "PlayStation: forgó medált jelenít meg a betöltôképernyôn." } }
+        }
     }
 };
 
@@ -224,7 +244,8 @@ CONFIG_DEFINE_LOCALE(ControllerIcons)
     { ELanguage::German,   { "Controllersymbole", "Ändere die Controllersymbole, um sie auf dein Modell anzupassen." } },
     { ELanguage::French,   { "Icône des boutons", "Modifie les icônes pour les faire correspondre à votre manette." } },
     { ELanguage::Spanish,  { "Iconos del mando", "Cambia los iconos para que coincidan con tu mando." } },
-    { ELanguage::Italian,  { "Icone dei tasti", "Modifica le icone per farle corrispondere con il tuo controller." } }
+    { ELanguage::Italian,  { "Icone dei tasti", "Modifica le icone per farle corrispondere con il tuo controller." } },
+	{ ELanguage::Hungarian,  { "Kontroller ikonok", "Kontrollergombok ikonjainak megváltoztatása." } }
 };
 
 // Japanese Notes: This localization should include furigana in its description.
@@ -277,6 +298,14 @@ CONFIG_DEFINE_ENUM_LOCALE(EControllerIcons)
             { EControllerIcons::Xbox,        { "XBOX", "" } },
             { EControllerIcons::PlayStation, { "PLAYSTATION", "" } }
         }
+    },
+	{
+        ELanguage::Hungarian,
+        {
+            { EControllerIcons::Auto,        { "AUTO", "Auto: a játék automatikusan állítja be a beviteli eszköz alapján." } },
+            { EControllerIcons::Xbox,        { "XBOX", "" } },
+            { EControllerIcons::PlayStation, { "PLAYSTATION", "" } }
+        }
     }
 };
 
@@ -288,7 +317,8 @@ CONFIG_DEFINE_LOCALE(HorizontalCamera)
     { ELanguage::German,   { "Horizontale Kamera", "Ändere wie sich die Kamera nach links und rechts bewegt." } },
     { ELanguage::French,   { "Caméra horizontale", "Modifie la rotation horizontale de la caméra." } },
     { ELanguage::Spanish,  { "Cámara horizontal", "Cambia cómo se mueve la camara hacia la izquierda y la derecha." } },
-    { ELanguage::Italian,  { "Telecamera orizzontale", "Modifica come la telecamera si muove da sinistra a destra." } }
+    { ELanguage::Italian,  { "Telecamera orizzontale", "Modifica come la telecamera si muove da sinistra a destra." } },
+	{ ELanguage::Hungarian,  { "Vízszintes kamera", "Kamera jobbra és balra mozgatásának megváltoztatása." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -299,7 +329,8 @@ CONFIG_DEFINE_LOCALE(VerticalCamera)
     { ELanguage::German,   { "Vertikale Kamera", "Ändere wie sich die Kamera nach oben und unten bewegt." } },
     { ELanguage::French,   { "Caméra verticale", "Modifie la rotation verticale de la caméra." } },
     { ELanguage::Spanish, { "Cámara vertical", "Cambia cómo se mueve la camara hacia arriba y abajo." } },
-    { ELanguage::Italian,  { "Telecamera verticale", "Modifica come la telecamera si muove su e giù." } }
+    { ELanguage::Italian,  { "Telecamera verticale", "Modifica come la telecamera si muove su e giù." } },
+	{ ELanguage::Hungarian,  { "Függôleges kamera", "Kamera fel és lefelé mozgatásának megváltoztatása." } }
 };
 
 CONFIG_DEFINE_ENUM_LOCALE(ECameraRotationMode)
@@ -345,6 +376,13 @@ CONFIG_DEFINE_ENUM_LOCALE(ECameraRotationMode)
             { ECameraRotationMode::Normal,  { "NORMALE", "" } },
             { ECameraRotationMode::Reverse, { "INVERTITA", "" } }
         }
+    },
+	{
+        ELanguage::Hungarian,
+        {
+            { ECameraRotationMode::Normal,  { "NORMÁL", "" } },
+            { ECameraRotationMode::Reverse, { "FORDÍTOTT", "" } }
+        }
     }
 };
 
@@ -356,7 +394,8 @@ CONFIG_DEFINE_LOCALE(Vibration)
     { ELanguage::German,   { "Vibration", "Schalte die Controllervibration an oder aus." } },
     { ELanguage::French,   { "Vibration", "Active les vibrations de la manette." } },
     { ELanguage::Spanish,  { "Vibración", "Activa o desactiva la vibración del mando." } },
-    { ELanguage::Italian,  { "Vibrazione", "Attiva/disattiva la vibrazione del controller." } }
+    { ELanguage::Italian,  { "Vibrazione", "Attiva/disattiva la vibrazione del controller." } },
+	{ ELanguage::Hungarian,  { "Rezgés", "Kontroller regzés beállítása." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -367,7 +406,8 @@ CONFIG_DEFINE_LOCALE(AllowBackgroundInput)
     { ELanguage::German,   { "Erlaube Hintergrundeingaben", "Erlaube Eingaben deines Controllers auch wenn das Spielfenster nicht fokussiert ist." } },
     { ELanguage::French,   { "Manette en arrière plan", "Permet d'utiliser la manette dans le jeu lorsque qu'il n'est pas au premier plan." } },
     { ELanguage::Spanish,  { "Control en segundo plano", "Permite controlar el juego con un mando mientras la ventana esté en segundo plano." } },
-    { ELanguage::Italian,  { "Input con la finestra inattiva", "Attiva/disattiva i tasti del controller mentre la finestra è inattiva." } }
+    { ELanguage::Italian,  { "Input con la finestra inattiva", "Attiva/disattiva i tasti del controller mentre la finestra è inattiva." } },
+	{ ELanguage::Hungarian,  { "Háttérbevitel engedélyezése", "Inaktív játékablak során engedélyezi vagy letiltja a kontroller bevitelt." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -378,7 +418,8 @@ CONFIG_DEFINE_LOCALE(MasterVolume)
     { ELanguage::German,   { "Gesamtlautstärke", "Passe die Gesamtlautstärke an." } },
     { ELanguage::French,   { "Volume général", "Réglage du volume général." } },
     { ELanguage::Spanish,  { "Volumen maestro", "Ajusta el volumen general." } },
-    { ELanguage::Italian,  { "Volume principale", "Regola il volume principale" } }
+    { ELanguage::Italian,  { "Volume principale", "Regola il volume principale" } },
+	{ ELanguage::Hungarian,  { "Fô hangerô", "Teljes hangerô beállítása." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -389,7 +430,8 @@ CONFIG_DEFINE_LOCALE(MusicVolume)
     { ELanguage::German,   { "Musiklautstärke", "Passe die Lautstärke der Musik an." } },
     { ELanguage::French,   { "Volume de la musique", "Réglage du volume de la musique." } },
     { ELanguage::Spanish,  { "Volumen de la música", "Ajusta el volumen de la música." } },
-    { ELanguage::Italian,  { "Volume musica di sottofondo", "Regola il volume della musica di sottofondo." } }
+    { ELanguage::Italian,  { "Volume musica di sottofondo", "Regola il volume della musica di sottofondo." } },
+	{ ELanguage::Hungarian,  { "Zene hangerô", "Háttérzene hangerejének beállítása." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -400,7 +442,8 @@ CONFIG_DEFINE_LOCALE(EffectsVolume)
     { ELanguage::German,   { "Soundeffektlautstärke", "Passe die Lautstärke der Soundeffekte an." } },
     { ELanguage::French,   { "Volume des effets sonores", "Réglage du volume des effets sonores." } },
     { ELanguage::Spanish,  { "Volumen de efectos", "Ajusta el volumen de los efectos de sonido." } },
-    { ELanguage::Italian,  { "Volume effetti sonori", "Regola il volume degli effetti sonori." } }
+    { ELanguage::Italian,  { "Volume effetti sonori", "Regola il volume degli effetti sonori." } },
+	{ ELanguage::Hungarian,  { "Effekt hangerô", "Hangeffektek hangerejének beállítása." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -411,7 +454,8 @@ CONFIG_DEFINE_LOCALE(MusicAttenuation)
     { ELanguage::German,   { "Musikdämpfung", "Stelle die Musik des Spiels stumm während externe Medien abgespielt werden." } },
     { ELanguage::French,   { "Atténuation audio", "Abaisse le volume des musiques du jeu lorsqu'un média externe est en cours de lecture." } },
     { ELanguage::Spanish,  { "Atenuación de música", "Atenúa la música del juego cuando un reproductor multimedia se encuentra activo." } },
-    { ELanguage::Italian,  { "Attenuazione musica", "Abbassa il volume della musica di sottofondo quando un'altra applicazione riproduce dei suoni." } }
+    { ELanguage::Italian,  { "Attenuazione musica", "Abbassa il volume della musica di sottofondo quando un'altra applicazione riproduce dei suoni." } },
+	{ ELanguage::Hungarian,  { "Zene attenuáció", "Visszahalkítja a játék hangerejét külsô forrásból érkezô hang esetén." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -422,7 +466,8 @@ CONFIG_DEFINE_LOCALE(ChannelConfiguration)
     { ELanguage::German,   { "Kanalkonfiguration", "Ändere den Ausgabemodus für dein Audioausgabegerät." } },
     { ELanguage::French,   { "Configuration sortie audio", "Modifie le mode de sortie pour votre périphérique audio." } },
     { ELanguage::Spanish,  { "Configuración de canales", "Cambia el modo de salida para tu dispositivo de audio." } },
-    { ELanguage::Italian,  { "Configurazione canali audio", "Modifica la modalità di output per il tuo dispositivo audio." } }
+    { ELanguage::Italian,  { "Configurazione canali audio", "Modifica la modalità di output per il tuo dispositivo audio." } },
+	{ ELanguage::Hungarian,  { "Hangrendszer", "Hangcsatornák számának beállítása." } }
 };
 
 CONFIG_DEFINE_ENUM_LOCALE(EChannelConfiguration)
@@ -468,6 +513,13 @@ CONFIG_DEFINE_ENUM_LOCALE(EChannelConfiguration)
             { EChannelConfiguration::Stereo,   { "STEREO", "" } },
             { EChannelConfiguration::Surround, { "SURROUND", "" } }
         }
+    },
+	{
+        ELanguage::Hungarian,
+        {
+            { EChannelConfiguration::Stereo,   { "SZTEREÓ", "" } },
+            { EChannelConfiguration::Surround, { "TÉRHANGZÁS", "" } }
+        }
     }
 };
 
@@ -479,7 +531,8 @@ CONFIG_DEFINE_LOCALE(VoiceLanguage)
     { ELanguage::German,   { "Stimmeinstellung", "Ändere die Sprache, die für Charakterstimmen benutzt wird." } },
     { ELanguage::French,   { "Langue de doublage", "Modifie la langue utilisée pour la voix des personnages." } },
     { ELanguage::Spanish,  { "Idioma de voz", "Cambia el idioma utilizado para las voces de los personajes." } },
-    { ELanguage::Italian, { "Lingua delle voci", "Modifica la lingua utilizzata per le voci dei personaggi." } }
+    { ELanguage::Italian, { "Lingua delle voci", "Modifica la lingua utilizzata per le voci dei personaggi." } },
+	{ ELanguage::Hungarian,  { "Beszéd nyelve", "Beállítja a karakterek beszédjének nyelvét." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -490,7 +543,8 @@ CONFIG_DEFINE_LOCALE(Subtitles)
     { ELanguage::German,   { "Untertitel", "Zeige Untertitel bei Dialogen." } },
     { ELanguage::French,   { "Sous-titres", "Affiche les sous-titres pendant les dialogues." } },
     { ELanguage::Spanish,  { "Subtítulos", "Muestra subtítulos durante los diálogos." } },
-    { ELanguage::Italian,  { "Sottotitoli", "Mostra i sottotitoli durante i dialoghi." } }
+    { ELanguage::Italian,  { "Sottotitoli", "Mostra i sottotitoli durante i dialoghi." } },
+	{ ELanguage::Hungarian,  { "Feliratok", "Feliratok megjelenítése párbeszéd során." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -501,7 +555,8 @@ CONFIG_DEFINE_LOCALE(BattleTheme)
     { ELanguage::German,   { "Kampfmusik", "Spiele die Kampfmusik des Werehogs während dem Kämpfen ab.\n\nDiese Option tritt das nächste Mal, wenn du in einen Kampf gerätst, in Kraft.\n\nExorzismen und Mini-Bosse werden hiervon nicht beeinflusst." } },
     { ELanguage::French,   { "Thème de combat", "Joue le thème de combat du Werehog pendant ces derniers.\n\nCette option s'appliquera la prochaine fois que vous serez en combat.\n\nLes missions d'exorcisme et les thèmes des miniboss ne seront pas affectés." } },
     { ELanguage::Spanish,  { "Tema de batalla", "Reproduce el tema de batalla del Werehog durante el combate.\n\nEsta opción se aplicará la próxima vez que entres en combate.\n\nLas misiones de exorcismo y los temas de los minijefes no se verán afectados." } },
-    { ELanguage::Italian,  { "Musica di combattimento", "Riproduci la musica di combattimento del Werehog quando inizi una battaglia.\n\nQuesta opzione verrà applicata la prossima volta che sei in battaglia.\n\nLa traccia musicale verrà riprodotta ugualmente nelle missioni di Esorcismo e i miniboss." } }
+    { ELanguage::Italian,  { "Musica di combattimento", "Riproduci la musica di combattimento del Werehog quando inizi una battaglia.\n\nQuesta opzione verrà applicata la prossima volta che sei in battaglia.\n\nLa traccia musicale verrà riprodotta ugualmente nelle missioni di Esorcismo e i miniboss." } },
+	{ ELanguage::Hungarian,  { "Harci zene", "A Werehog harci zene lejátszása az ütközetek során.\n\nA beállítás a következô ütközettôl érvényes.\n\nMiniboss és szellemûzés közbeni zenéket nem érinti." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -512,7 +567,8 @@ CONFIG_DEFINE_LOCALE(WindowSize)
     { ELanguage::German,   { "Fenstergröße", "Ändere die Größe des Spielfensters im Fenstermodus." } },
     { ELanguage::French,   { "Taille de la fenêtre", "Modifie la taille de la fenêtre de jeu en mode fenêtré." } },
     { ELanguage::Spanish,  { "Tamaño de ventana", "Ajusta el tamaño de la ventana de juego." } },
-    { ELanguage::Italian,  { "Dimensioni finestra", "Regola le dimensioni della finestra del gioco in modalità finestra." } }
+    { ELanguage::Italian,  { "Dimensioni finestra", "Regola le dimensioni della finestra del gioco in modalità finestra." } },
+	{ ELanguage::Hungarian,  { "Ablakméret", "Beállítja a játékablak méretét ablakos mód esetén.." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -523,7 +579,8 @@ CONFIG_DEFINE_LOCALE(Monitor)
     { ELanguage::German,   { "Monitor", "Ändere auf welchem Monitor das Spiel angezeigt wird." } },
     { ELanguage::French,   { "Moniteur", "Change le moniteur sur lequel le jeu sera affiché." } },
     { ELanguage::Spanish,  { "Pantalla", "Cambia la pantalla en la cuál se muestra el juego." } },
-    { ELanguage::Italian,  { "Schermo", "Cambia lo schermo su cui visualizzare il gioco." } }
+    { ELanguage::Italian,  { "Schermo", "Cambia lo schermo su cui visualizzare il gioco." } },
+	{ ELanguage::Hungarian,  { "Kijelzô", "Annak beállítása, melyik kijelzôn jelenjem meg a játék." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -534,7 +591,8 @@ CONFIG_DEFINE_LOCALE(AspectRatio)
     { ELanguage::German,   { "Seitenverhältnis", "Verändere das Seitenverhältnis." } },
     { ELanguage::French,   { "Format d'image", "Modifie le format d'image." } },
     { ELanguage::Spanish,  { "Relación de aspecto", "Cambia la relación de aspecto." } },
-    { ELanguage::Italian,  { "Rapporto d'aspetto", "Modifica il rapporto d'aspetto." } }
+    { ELanguage::Italian,  { "Rapporto d'aspetto", "Modifica il rapporto d'aspetto." } },
+	{ ELanguage::Hungarian,  { "Képarány", "Képarány kiválasztása." } }
 };
 
 // Japanese Notes: This localization should include furigana in its description.
@@ -593,7 +651,16 @@ CONFIG_DEFINE_ENUM_LOCALE(EAspectRatio)
             { EAspectRatio::Narrow, { "4:3", "4:3: blocca il gioco a un rapporto d'aspetto stretto." } },
             { EAspectRatio::OriginalNarrow, { "4:3 ORIGINALE", "4:3 Originale: blocca il gioco a un rapporto d'aspetto stretto e mantiene la parità con l'implementazione originale del gioco." } }
         }
-    }
+    },
+	{
+        ELanguage::Hungarian,
+        {
+            { EAspectRatio::Auto, { "AUTO", "Auto: képarány automatikus beállítása az ablakméret alapján." } },
+            { EAspectRatio::Wide, { "16:9", "16:9: rögzíti a képarányt szélesvásznúra." } },
+            { EAspectRatio::Narrow, { "4:3", "4:3: rögzíti a képarányt keskeny arányúra." } },
+            { EAspectRatio::OriginalNarrow, { "EREDETI 4:3", "Eredeti 4:3: rögzíti a képarányt keskeny arányúra és megôrzi a játék eredeti megjelenését." } }
+        }
+    },
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -604,7 +671,8 @@ CONFIG_DEFINE_LOCALE(ResolutionScale)
     { ELanguage::German,   { "Rendering-Auflösung", "Passe die Auflösung der internen Darstellung an.\n\n%dx%d" } },
     { ELanguage::French,   { "Échelle de rendu", "Modifie la résolution interne du jeu.\n\n%dx%d" } },
     { ELanguage::Spanish,  { "Escala de resolución", "Ajusta la resolución interna del juego.\n\n%dx%d" } },
-    { ELanguage::Italian, { "Scala risoluzione", "Regola la risoluzione interna del gioco.\n\n%dx%d" } }
+    { ELanguage::Italian, { "Scala risoluzione", "Regola la risoluzione interna del gioco.\n\n%dx%d" } },
+	{ ELanguage::Hungarian,  { "Renderelési arány", "Beállítja a játék belsô felbontását.\n\n%dx%d" } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -615,7 +683,8 @@ CONFIG_DEFINE_LOCALE(Fullscreen)
     { ELanguage::German,   { "Vollbild", "Wechsle zwischen dem randlosen Vollbildmodus und dem Fenstermodus." } },
     { ELanguage::French,   { "Plein écran", "Alterne entre le mode plein écran sans bordures et le mode fenêtré." } },
     { ELanguage::Spanish,  { "Pantalla completa", "Cambia entre modo de pantalla completa o ventana." } },
-    { ELanguage::Italian,  { "Schermo pieno", "Attiva/disattiva tra modalità finestra senza cornice e modalità finestra." } }
+    { ELanguage::Italian,  { "Schermo pieno", "Attiva/disattiva tra modalità finestra senza cornice e modalità finestra." } },
+	{ ELanguage::Hungarian,  { "Teljes képernyô", "Keret nélküli és ablakos módra váltás." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -626,7 +695,8 @@ CONFIG_DEFINE_LOCALE(VSync)
     { ELanguage::German,   { "V-Sync", "Synchronisiere das Spiel mit der Bildwiederholrate deines Bildschirms um Bildverzerrungen zu vermeiden." } },
     { ELanguage::French,   { "V-Sync", "Synchronise le jeu avec la fréquence de rafraîchissement de l'écran pour éviter le screen tearing." } },
     { ELanguage::Spanish,  { "V-Sync", "Sincroniza el juego a la tasa de refresco de la pantalla para prevenir el rasgado de la imagen." } },
-    { ELanguage::Italian,  { "V-Sync", "Sincronizza il gioco con la frequenza d'aggiornamento del display per evitare lo screen tearing." } }
+    { ELanguage::Italian,  { "V-Sync", "Sincronizza il gioco con la frequenza d'aggiornamento del display per evitare lo screen tearing." } },
+	{ ELanguage::Hungarian,  { "V-Sync", "Szinkronizálja a játék képkockaszámát a kijelzô frissítésével, ezzel csökkentve a képtörést." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -637,7 +707,8 @@ CONFIG_DEFINE_LOCALE(FPS)
     { ELanguage::German,   { "FPS", "Setze die maximale Anzahl der Bilder pro Sekunde, die das Spiel darstellen kann.\n\nWARNUNG: Das Spiel kann bei höheren FPS als 60 ungewolltes Verhalten aufweisen." } },
     { ELanguage::French,   { "IPS", "Détermine la fréquence d'images maximale du jeu.\n\nATTENTION : cela peut entraîner des problèmes à des taux de rafraîchissement supérieurs à 60 IPS." } },
     { ELanguage::Spanish,  { "FPS", "Establece la tasa de fotogramas máxima a la que puede correr el juego.\n\nADVERTENCIA: esto puede introducir fallos en tasas mayores a 60 FPS." } },
-    { ELanguage::Italian,  { "FPS", "Imposta il frame rate massimo del gioco.\n\nATTENZIONE: questa opzione può causare dei glitch a frame rate più alti di 60 FPS." } }
+    { ELanguage::Italian,  { "FPS", "Imposta il frame rate massimo del gioco.\n\nATTENZIONE: questa opzione può causare dei glitch a frame rate più alti di 60 FPS." } },
+	{ ELanguage::Hungarian,  { "FPS", "Beállítja a maximális képkockaszámot, amivel a játék futhat.\n\nFIGYELEM: ez hibákat okozhat 60 FPS feletti beállítás esetén." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -648,7 +719,8 @@ CONFIG_DEFINE_LOCALE(Brightness)
     { ELanguage::German,   { "Helligkeit", "Passe die Helligkeit des Spiels an bis das linke Symbol noch gerade so sichtbar ist." } },
     { ELanguage::French,   { "Luminosité", "Réglez le niveau de luminosité jusqu'à ce que le symbole à gauche soit à peine visible." } },
     { ELanguage::Spanish,  { "Brillo", "Ajusta el nivel de brillo hasta que el símbolo a la izquierda sea apenas visible." } },
-    { ELanguage::Italian,  { "Luminosità", "Regola la luminosità dello schermo fino a quando il simbolo a sinistra diventa leggermente visibile." } }
+    { ELanguage::Italian,  { "Luminosità", "Regola la luminosità dello schermo fino a quando il simbolo a sinistra diventa leggermente visibile." } },
+	{ ELanguage::Hungarian,  { "Fényerô", "Módosítsd a fényerôt, amíg a bal oldalon lévô szimbólum alig látható." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -659,7 +731,8 @@ CONFIG_DEFINE_LOCALE(AntiAliasing)
     { ELanguage::German,   { "Kantenglättung", "Passe die Menge an Kantenglättung an." } },
     { ELanguage::French,   { "Anticrénelage", "Ajuste le niveau d'anticrénelage appliqué aux bords des objets." } },
     { ELanguage::Spanish,  { "Anti-Aliasing", "Ajusta el nivel de suavizado aplicado a los dientes de sierra." } },
-    { ELanguage::Italian,  { "Anti-Aliasing", "Regola la quantità di smussamento applicata ai bordi." } }
+    { ELanguage::Italian,  { "Anti-Aliasing", "Regola la quantità di smussamento applicata ai bordi." } },
+	{ ELanguage::Hungarian,  { "Élsimítás", "Beállítja, milyen mértékû finomítás történjen az éleken." } }
 };
 
 CONFIG_DEFINE_ENUM_LOCALE(EAntiAliasing)
@@ -700,6 +773,12 @@ CONFIG_DEFINE_ENUM_LOCALE(EAntiAliasing)
             { EAntiAliasing::None, { "NULLO", "" } }
         }
     },
+	{
+        ELanguage::Hungarian,
+        {
+            { EAntiAliasing::None, { "KI", "" } }
+        }
+    }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -710,7 +789,8 @@ CONFIG_DEFINE_LOCALE(TransparencyAntiAliasing)
     { ELanguage::German,   { "Transparenz-Kantenglättung", "Wende Kantenglättung auf Alpha-Transparenz-Texturen an." } },
     { ELanguage::French,   { "Anticrénelage de transparence", "Applique l'anticrénelage sur les textures transparentes." } },
     { ELanguage::Spanish,  { "Anti-Aliasing de transparencias", "Aplica antialiasing a las texturas transparentes." } },
-    { ELanguage::Italian,  { "Anti-Aliasing su texture trasparenti", "Applica l'anti-aliasing alle texture trasparenti." } }
+    { ELanguage::Italian,  { "Anti-Aliasing su texture trasparenti", "Applica l'anti-aliasing alle texture trasparenti." } },
+	{ ELanguage::Hungarian,  { "Átlátszóság élsimítása", "Élsimítás beállítása átlátszó textúrákra." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -721,7 +801,8 @@ CONFIG_DEFINE_LOCALE(ShadowResolution)
     { ELanguage::German,   { "Schattenauflösung", "Stelle die Auflösung der Echtzeit-Schatten ein." } },
     { ELanguage::French,   { "Résolution des ombres", "Définit la résolution des ombres en temps réel." } },
     { ELanguage::Spanish,  { "Resolución de sombras", "Establece la resolución de las sombras de tiempo real." } },
-    { ELanguage::Italian,  { "Risoluzione ombre", "Imposta la risoluzioni delle ombre in tempo reale." } }
+    { ELanguage::Italian,  { "Risoluzione ombre", "Imposta la risoluzioni delle ombre in tempo reale." } },
+	{ ELanguage::Hungarian,  { "Árnyékok felbontása", "Valós-idejû árnyékok felbontásának beállítása." } }
 };
 
 // Japanese Notes: This localization should include furigana in its description.
@@ -762,6 +843,12 @@ CONFIG_DEFINE_ENUM_LOCALE(EShadowResolution)
         {
             { EShadowResolution::Original, { "ORIGINALE", "Originale: il gioco determinerà automaticamente la risoluzione delle ombre." } }
         }
+    },
+	{
+        ELanguage::Hungarian,
+        {
+            { EShadowResolution::Original, { "EREDETI", "Eredeti: a játék automatikusan állítja be az árnyékok felbontását." } }
+        }
     }
 };
 
@@ -773,7 +860,8 @@ CONFIG_DEFINE_LOCALE(GITextureFiltering)
     { ELanguage::German,   { "GI Texturfilterung", "Ändere die Qualität der Filterung für Global-Illumination-Texturen." } },
     { ELanguage::French,   { "Filtre des textures IG", "Modifie la qualité du filtre utilisé pour les textures d'illumination globale." } },
     { ELanguage::Spanish,  { "Filtrado de texturas de GI", "Cambia la calidad del filtrado utilizado en las texturas de iluminación global." } },
-    { ELanguage::Italian,  { "Filtraggio delle texture GI", "Regola la qualità del sistema di filtraggio utilizzato per le texture dell'illuminazione." } }
+    { ELanguage::Italian,  { "Filtraggio delle texture GI", "Regola la qualità del sistema di filtraggio utilizzato per le texture dell'illuminazione." } },
+	{ ELanguage::Hungarian,  { "GI textúraszûrés", "A szûrés minôségének beállítása globális megvilágítással rendelkezô textúrák esetén." } }
 };
 
 CONFIG_DEFINE_ENUM_LOCALE(EGITextureFiltering)
@@ -819,6 +907,13 @@ CONFIG_DEFINE_ENUM_LOCALE(EGITextureFiltering)
             { EGITextureFiltering::Bilinear, { "BILINEARE", "" } },
             { EGITextureFiltering::Bicubic,  { "BICUBICO", "" } }
         }
+    },
+	{
+        ELanguage::Hungarian,
+        {
+            { EGITextureFiltering::Bilinear, { "BILINEAR", "" } },
+            { EGITextureFiltering::Bicubic,  { "BICUBIC", "" } }
+        }
     }
 };
 
@@ -830,7 +925,8 @@ CONFIG_DEFINE_LOCALE(MotionBlur)
     { ELanguage::German,   { "Bewegungsunschärfe", "Verändere die Qualität der Bewegungsunschärfe." } },
     { ELanguage::French,   { "Flou de mouvement", "Modifie la qualité du flou de mouvement." } },
     { ELanguage::Spanish,  { "Desenfoque de movimiento", "Cambia la calidad del desenfoque de movimiento." } },
-    { ELanguage::Italian,  { "Sfocatura di movimento", "Regola la qualità della sfocatura di movimento." } }
+    { ELanguage::Italian,  { "Sfocatura di movimento", "Regola la qualità della sfocatura di movimento." } },
+	{ ELanguage::Hungarian,  { "Mozgási elmosás", "Elmosás minôségének beállítása." } }
 };
 
 // Japanese Notes: This localization should include furigana in its description.
@@ -883,6 +979,14 @@ CONFIG_DEFINE_ENUM_LOCALE(EMotionBlur)
             { EMotionBlur::Original, { "ORIGINALE", "" } },
             { EMotionBlur::Enhanced, { "AUMENTATO", "Aumentato: usa più passaggi per una sfocatura più fluida, con un impatto sulle prestazioni." } }
         }
+    },
+	{
+        ELanguage::Hungarian,
+        {
+            { EMotionBlur::Off,      { "KI", "" } },
+            { EMotionBlur::Original, { "EREDETI", "" } },
+            { EMotionBlur::Enhanced, { "JAVÍTOTT", "Javított: több mintából dolgozik a jobb minôség érdekében, a teljesítmény rovására." } }
+        }
     }
 };
 
@@ -894,7 +998,8 @@ CONFIG_DEFINE_LOCALE(XboxColorCorrection)
     { ELanguage::German,   { "Xbox Farbkorrektur", "Benutzt den warmen Farbstich aus der Xbox-Version des Spiels." } },
     { ELanguage::French,   { "Correction couleurs Xbox", "Utilise le filtre de couleur provenant de la version Xbox du jeu." } },
     { ELanguage::Spanish,  { "Corrección de color de Xbox", "Utiliza el tono cálido de la versión Xbox del juego." } },
-    { ELanguage::Italian,  { "Correzione dei colori Xbox", "Applica il filtro di colori più caldi utilizzato dalla versione Xbox del gioco." } }
+    { ELanguage::Italian,  { "Correzione dei colori Xbox", "Applica il filtro di colori più caldi utilizzato dalla versione Xbox del gioco." } },
+	{ ELanguage::Hungarian,  { "Xbox színjavítás", "Melegebb színárnyalat használata a játék Xbox verziójából." } }
 };
 
 // Japanese Notes: This localization should include furigana.
@@ -905,7 +1010,8 @@ CONFIG_DEFINE_LOCALE(CutsceneAspectRatio)
     { ELanguage::German,   { "Zwischensequenz-Seitenverhältnis", "Verändere das Seitenverhältnis der Echtzeit-Zwischensequenzen." } },
     { ELanguage::French,   { "Format des cinématiques", "Modifie le format d'image des cinématiques en temps réel." } },
     { ELanguage::Spanish,  { "Relación de aspecto de cinemáticas", "Cambia la relación de aspecto de las cinemáticas de tiempo real." } },
-    { ELanguage::Italian,  { "Rapporto d'aspetto dei filmati", "Cambia il rapporto d'aspetto dei filmati in tempo reale." } }
+    { ELanguage::Italian,  { "Rapporto d'aspetto dei filmati", "Cambia il rapporto d'aspetto dei filmati in tempo reale." } },
+	{ ELanguage::Hungarian,  { "Jelenetek képaránya", "A valós idejû jelenetek képarányának beállítása." } }
 };
 
 // Japanese Notes: This localization should include furigana in its description.
@@ -952,6 +1058,13 @@ CONFIG_DEFINE_ENUM_LOCALE(ECutsceneAspectRatio)
             { ECutsceneAspectRatio::Original, { "ORIGINALE", "Originale: blocca il rapporto d'aspetto dei filmati a 16:9." } },
             { ECutsceneAspectRatio::Unlocked, { "SBLOCCATO", "Sbloccato: il rapporto d'aspetto verrà regolato in base alle dimensioni della finestra.\n\nATTENZIONE: questa opzione potrebbe causare dei problemi visivi se il rapporto d'aspetto è oltre 16:9." } }
         }
+    },
+	{
+        ELanguage::Hungarian,
+        {
+            { ECutsceneAspectRatio::Original, { "EREDETI", "Eredeti: az eredeti 16:9-es képarányt állítja be." } },
+            { ECutsceneAspectRatio::Unlocked, { "SZÉLESÍTETT", "Szélesített: a jelenetek képaránya az ablakmérethethez igazodik.\n\nFIGYELEM: furcsaságok jelenhetnek meg az eredeti 16:9-es képarányon túl." } }
+        }
     }
 };
 
@@ -963,7 +1076,8 @@ CONFIG_DEFINE_LOCALE(UIAlignmentMode)
     { ELanguage::German,   { "Benutzeroberflächenausrichtung", "Verändere wie die Benutzeroberfläche sich mit dem Bildschirm ausrichtet." } },
     { ELanguage::French,   { "Alignement de l'IU", "Modifie l'alignement de l'interface utilisateur sur l'écran." } },
     { ELanguage::Spanish,  { "Modo de alineamiento de UI", "Cambia la alineación de la interfaz de usuario con la pantalla." } },
-    { ELanguage::Italian,  { "Modalità allineamento interfaccia", "Modifica come l'interfaccia si allinea con lo schermo." } }
+    { ELanguage::Italian,  { "Modalità allineamento interfaccia", "Modifica come l'interfaccia si allinea con lo schermo." } },
+	{ ELanguage::Hungarian,  { "Felület megjelenése", "Megváltoztatja, ahogy a kezelôfelület megjelenik a képernyôn." } }
 };
 
 // Japanese Notes: This localization should include furigana in its description.
@@ -1009,6 +1123,13 @@ CONFIG_DEFINE_ENUM_LOCALE(EUIAlignmentMode)
         {
             { EUIAlignmentMode::Edge,    { "BORDI", "Bordi: l'interfaccia si allineerà con i bordi dello schermo." } },
             { EUIAlignmentMode::Centre,  { "CENTRO", "Centro: l'interfaccia si allineerà con il centro dello schermo." } }
+        }
+    },
+	{
+        ELanguage::Hungarian,
+        {
+            { EUIAlignmentMode::Edge,    { "SZÉLEN", "Szélen: A kezelôfelület mindig a képenyô szélén jelenik meg." } },
+            { EUIAlignmentMode::Centre,  { "KÖZÉPEN", "Középen: A kezelôfelület a képenyô közepéhez igazodik." } }
         }
     }
 };
