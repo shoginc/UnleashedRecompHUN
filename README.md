@@ -1,3 +1,9 @@
+-Added Hungarian language option
+-Since XDBF doesn't contain the achievements in Hungarian, it will revert back to english in the overlay and in the achievements menu.
+-Default language set to Hungarian if no SURecomp config file exists.
+
+UnleashedRecomp original README:
+
 <p align="center">
     <img src="https://raw.githubusercontent.com/hedge-dev/UnleashedRecompResources/refs/heads/main/images/logo/Logo.png" width="512"/>
 </p>
