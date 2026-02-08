@@ -15,7 +15,8 @@ CONFIG_DEFINE_ENUM_TEMPLATE(ELanguage)
     { "German",   ELanguage::German },
     { "French",   ELanguage::French },
     { "Spanish",  ELanguage::Spanish },
-    { "Italian",  ELanguage::Italian }
+    { "Italian",  ELanguage::Italian },
+    { "Hungarian",  ELanguage::Hungarian },
 };
 
 CONFIG_DEFINE_ENUM_TEMPLATE(ETimeOfDayTransition)
