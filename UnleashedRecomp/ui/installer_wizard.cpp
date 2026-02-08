@@ -385,6 +385,7 @@ const char* LANGUAGE_TEXT[] =
     "ESPAÑOL", // Spanish
     "ITALIANO", // Italian
     "日本語", // Japanese
+    "MAGYAR", // Hungarian
 };
 
 const ELanguage LANGUAGE_ENUM[] =
@@ -395,6 +396,7 @@ const ELanguage LANGUAGE_ENUM[] =
     ELanguage::Spanish,
     ELanguage::Italian,
     ELanguage::Japanese,
+    ELanguage::Hungarian,
 };
 
 const char *DLC_SOURCE_TEXT[] =
@@ -1246,11 +1248,11 @@ static void DrawLanguagePicker()
         float minX, maxX;
         bool buttonPressed;
 
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < 7; i++)
         {
-            ComputeButtonColumnCoordinates((i < 3) ? ButtonColumnLeft : ButtonColumnRight, minX, maxX);
+            ComputeButtonColumnCoordinates((i < 4) ? ButtonColumnLeft : ButtonColumnRight, minX, maxX);
 
-            float minusY = (CONTAINER_BUTTON_GAP + BUTTON_HEIGHT) * (float(i % 3));
+            float minusY = (CONTAINER_BUTTON_GAP + BUTTON_HEIGHT) * (float(i % 4));
             ImVec2 min = { minX, g_aspectRatioOffsetY + Scale(CONTAINER_Y + CONTAINER_HEIGHT - CONTAINER_BUTTON_GAP - BUTTON_HEIGHT - minusY) };
             ImVec2 max = { maxX, g_aspectRatioOffsetY + Scale(CONTAINER_Y + CONTAINER_HEIGHT - CONTAINER_BUTTON_GAP - minusY) };
 
