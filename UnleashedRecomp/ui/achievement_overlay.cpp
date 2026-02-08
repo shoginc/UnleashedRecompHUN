@@ -28,6 +28,7 @@ static double g_appearTime = 0;
 static Achievement g_achievement;
 
 static ImFont* g_fntSeurat;
+static bool magyar2 = false;
 
 static bool DrawContainer(ImVec2 min, ImVec2 max, float cornerRadius = 25)
 {
@@ -227,11 +228,21 @@ void AchievementOverlay::Draw()
 
 void AchievementOverlay::Open(int id)
 {
+    if (Config::Language == ELanguage::Hungarian)
+    {
+        magyar2 = true;
+        Config::Language = ELanguage::English;
+    }
     s_queue.push(id);
 }
 
 void AchievementOverlay::Close()
 {
+    if (magyar2 == true)
+    {
+        Config::Language = ELanguage::Hungarian;
+        magyar2 = false;
+    }
     if (!g_isClosing)
     {
         g_appearTime = ImGui::GetTime();

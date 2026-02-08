@@ -53,6 +53,7 @@ static double g_lastIncrementTime;
 
 static bool g_upWasHeld;
 static bool g_downWasHeld;
+static bool magyar = false;
 
 static void ResetSelection()
 {
@@ -744,6 +745,12 @@ void AchievementMenu::Draw()
 
 void AchievementMenu::Open()
 {
+    if (Config::Language == ELanguage::Hungarian)
+    {
+        magyar = true;
+        Config::Language = ELanguage::English;
+    }
+
     s_isVisible = true;
     g_isClosing = false;
     g_appearTime = ImGui::GetTime();
@@ -773,6 +780,11 @@ void AchievementMenu::Open()
 
 void AchievementMenu::Close()
 {
+    if (magyar == true)
+    {
+        Config::Language = ELanguage::Hungarian;
+        magyar = false;
+    }
     if (!g_isClosing)
     {
         g_appearTime = ImGui::GetTime();
